@@ -1,6 +1,6 @@
-void displayName(str){
-  if(str.length>0){
-    print(str);
+void displayName(String name){
+  if(name.length>0){
+    print(name);
   }
   else{
     throw Exception("name is empty");

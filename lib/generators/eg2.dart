@@ -1,10 +1,13 @@
-Stream asyncNo(int num) async*{
-  int x=10;
-  while(x>=num){
+Stream asyncNo(int num) async* {
+  int x = 10;
+  while (x >= num) {
     yield x--;
   }
 }
-void main(){
+
+void main() {
   print("using Asynchronous Generator:");
-  asyncNo(0).forEach(print);
+  asyncNo(0).forEach((e) {
+    print(e);
+  });
 }
