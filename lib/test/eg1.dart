@@ -1,4 +1,5 @@
-void main() {
-  List<String> name = ["akku", "vineeth", "meenu"];
-  name.map((e) => print(e)).toList();
+void main(){
+  String name="vineeth";
+  print(name.length);
+
 }
