@@ -1,0 +1,3 @@
+/*Iterables represent a collection of elements that can be accessed sequentially. They are synchronous, meaning that elements are retrieved one at a time in a predictable order. Iterables are commonly used for processing data that is already available in memory. Examples of iterable collections include lists, sets, and maps.
+
+Streams, on the other hand, represent a sequence of asynchronous events. They are designed to handle data that is not yet available or that becomes available over time. Streams emit events asynchronously, which means that events are delivered to listeners as they become available, not necessarily in a sequential order. Streams are particularly useful for handling asynchronous operations like network requests, file I/O, and user interactions. */
