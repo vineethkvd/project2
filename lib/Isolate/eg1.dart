@@ -3,13 +3,25 @@ import 'dart:isolate';
 Future<void> sayHi(var msg) async {
   print('Execution from sayHi... The message is: $msg');
   // Introduce a delay of 1 second
-  await Future.delayed(Duration(seconds: 1));
+  await Future.delayed(Duration(seconds: 30));
 }
 
 void main() async {
-  Isolate isolate1, isolate2, isolate3;
-
-  isolate1 = await Isolate.spawn(sayHi, 'Hello!!');
-  isolate2 = await Isolate.spawn(sayHi, 'Whats up!!');
-  isolate3 = await Isolate.spawn(sayHi, 'Welcome!!');
+  sayHi("Hi vin");
+  sayHi("Hi ammu");
+  sayHi("Hi manu");
 }
+
+// import 'dart:isolate';
+//
+// Future<void> sayHi(var msg) async {
+//   print('Execution from sayHi... The message is: $msg');
+//   // Introduce a delay of 30 seconds
+//   await Future.delayed(Duration(seconds: 5));
+// }
+//
+// void main() async {
+//   await sayHi("Hi vin");
+//   await sayHi("Hi ammu");
+//   await sayHi("Hi manu");
+// }
